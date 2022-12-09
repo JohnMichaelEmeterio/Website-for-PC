@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
+      background-color: rgb(226, 223, 223);
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
     }
@@ -82,36 +83,8 @@
   position: absolute;
   top: 0;
 }
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 400px) {
   .prev, .next,.text {font-size: 11px}
 }
 * {
@@ -123,59 +96,29 @@
   clear: both;
   display: table;
 }
-
-/* Center website */
-.main {
-  max-width: 1000px;
-  margin: auto;
-}
-
-h1 {
-  font-size: 50px;
-  word-break: break-all;
-}
-
 .row {
   margin: 8px -16px;
 }
-
 /* Add padding BETWEEN each column */
 .row,
 .row > .column {
   padding: 8px;
 }
-
 /* Create four equal columns that floats next to each other */
 .column {
   float: left;
   width: 25%;
 }
-
 /* Clear floats after rows */ 
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-
 /* Content */
 .content {
-  background-color: white;
+  background-color:white;
   padding: 10px;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-  .column {
-    width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
 }
   </style>
 </head>
@@ -183,10 +126,10 @@ h1 {
 <body>
 
   <div class="topnav">
-    <a href="#home">Home</a>
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
+    <a href="#Home">Home</a>
+    <a href="#Product">Product</a>
+    <a href="#Category">Category</a>
+    <a href="#About">About</a>
   </div>
 
 
@@ -232,10 +175,10 @@ h1 {
   <span class="dot" onclick="currentSlide(1)"></span>
   <span class="dot" onclick="currentSlide(2)"></span>
   <span class="dot" onclick="currentSlide(3)"></span>
-</div>
+</div><br>
 
 
-
+<h1 id="Category" style="text-align:center">Products Category</h1>
 <div class="row">
   <div class="column">
     <div class="content">
@@ -298,96 +241,95 @@ h1 {
 </div>
 
 <div class="content">
-  <img src="https://static2.reviewthisimages.com/wordpress/wp-content/uploads/2020/11/desktop-tower-with-liquid-cooling-system-e1595892071225.jpg" alt="Bear" style="width:100%">
-  <h3>Some Other Work</h3>
-  <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam.
-    Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
-  <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam.
-    Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+  <img src="https://external-preview.redd.it/ZKyyUC7Q5FVmAk3ssb4ssJwjUmRpKtsAWq39twfiZ6s.jpg?auto=webp&s=2a466716570f153d8f6677b3717b39c53890f10e" style="width: 100%;">
+  <h3>Cool Builds</h3>
+  <ul style="font-size: 20px;">
+    <li>CPU: Ryzen 7 3700x</li>
+    <li>Graphics Card: GeForce® RTX 2070 SUPER™ GAMING OC WHITE 8G</li>
+    <li>Motherboard: ASUS PRIME X570-PRO</li>
+    <li>Ram: 16GB G.Skill Trident Z Neo DDR4-3600 DIMM CL16 Dual Kit</li>
+    <li>Storage: 1TB WD Blue M.2 2280 SATA (Nvme double the price and i have an extra m.2 slot in case i upgrade)</li>
+    <li>PSU: Corsair RM750X White 750W Gold+ (came with white cables already)</li>
+    <li>Case: NZXT H510 ELITE WHITE (4 fans included)</li>
+    <li>Milk</li>
+  </ul> 
 </div>
 </div>
 
 <div class="row">
+  <h1 id="Product" style="text-align: center;">Top SellingProducts</h1>
   <div class="column">
     <div class="content">
       <img
-        src="https://cdn.shopify.com/s/files/1/0101/4864/2879/products/4065-a_320x.jpg?v=1652943440"
+        src="https://cdn.shopify.com/s/files/1/0101/4864/2879/products/3093-b.jpg?v=1588509583"
         alt="Mountains" style="width:100%">
-      <h3>Nvision IP24V1 23.8" IPS Gaming Monitor</h3>
-      <p>₱4,495.00.</p>
+      <h5>ASUS VP249QGR 23.8” Gaming Monitor 144Hz Full HD (1920 x 1080) </h5>
+      <p>₱10,650.00</p>
     </div>
   </div>
   <div class="column">
     <div class="content">
       <img
-        src="https://cdn.shopify.com/s/files/1/0101/4864/2879/products/5082-a_540x.jpg?v=1605082334"
+        src="https://cf.shopee.com.my/file/88925095abbf9356b1a7bb5a6d1fff57"
         alt="Lights" style="width:100%">
-      <h3>AMD Ryzen 5 5600X or 7 5700X Socket AM4 3.7GHz Processor</h3>
+      <h5>AMD Ryzen 5 5600X or 7 5700X Socket AM4 3.7GHz Processor</h5>
       <p>₱10,895.00</p>
     </div>
   </div>
   <div class="column">
     <div class="content">
       <img
-        src="https://cdn.shopify.com/s/files/1/0101/4864/2879/files/motherboard_909dbe74-a864-4758-a5d8-955671113384_720x.jpg?v=1644213499"
+        src="https://www.pcstudio.in/wp-content/uploads/2020/11/MSI-GEFORCE-GTX-1660-SUPER-VENTUS-OC-1.png"
         alt="Nature" style="width:100%">
-      <h3>My Work</h3>
-      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam.
-        Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+      <h5>MSI GTX 1660 Super Ventus Xs OC 6gb 192bit GDdr6</h5>
+      <p>₱15,750.00</p>
     </div>
   </div>
   <div class="column">
     <div class="content">
       <img
-        src="https://cdn.shopify.com/s/files/1/0101/4864/2879/files/mouse_26d09a6d-afac-45a6-b771-6bc6ae5d3d95_720x.jpg?v=1644213499"
+        src="https://elbadrgroupeg.store/image/cache/catalog/msi/il83i0drM9FLmsvKBQDMO0R8e86cc65qOsOCXM8-1000x1000w.jpg"
         alt="Mountains" style="width:100%">
-      <h3>My Work</h3>
-      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam.
-        Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+      <h5>MSI MAG B550M Mortar Wi-Fi and Mortar Max Wi-Fi AMD B550 Micro-ATX</h5>
+      <p>₱9,750.00</p>
     </div>
   </div>
   <div class="column">
     <div class="content">
       <img
-        src="https://cdn.shopify.com/s/files/1/0101/4864/2879/files/keyboard_7237b100-64d3-410c-a8d0-2c892871c013_720x.jpg?v=1644213499"
+        src="https://st1.myideasoft.com/idea/ds/70/myassets/products/690/rog-gladius-ii-core-0.jpg?revision=1567090894"
         alt="Mountains" style="width:100%">
-      <h3>My Work</h3>
-      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam.
-        Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+      <h5>Asus ROG Gladius III RGB ROG Paracord and Aura Sync </h5>
+      <p>₱4,720.00</p>
     </div>
   </div>
   <div class="column">
     <div class="content">
       <img
-        src="https://cdn.shopify.com/s/files/1/0101/4864/2879/files/monitor_bf497b54-fb96-4fb2-a5c1-e2ad403be490_720x.jpg?v=1644213500"
+        src="https://cdn.shopify.com/s/files/1/0228/7117/9336/products/PTPC248ABUS_A1_V01_20191022_1024x1024.jpg?v=1576650669"
         alt="Lights" style="width:100%">
-      <h3>My Work</h3>
-      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam.
-        Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+      <h5>DBTK X RAKK Pluma Trimode Mechanical Gaming Keyboard</h5>
+      <p>₱2,599.00</p>
     </div>
   </div>
   <div class="column">
     <div class="content">
       <img
-        src="https://cdn.shopify.com/s/files/1/0101/4864/2879/files/memory_f5eb667d-ae18-46af-9259-d7261b91c6ea_720x.jpg?v=1644213499"
+        src="https://cdn.shopify.com/s/files/1/0101/4864/2879/products/2220-a_1024x1024.jpg?v=1586259605"
         alt="Nature" style="width:100%">
-      <h3>My Work</h3>
-      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam.
-        Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+      <h5>Team Elite TForce Delta 16gb 2x8 3200mhz Ddr4 RGB Memory</h5>
+      <p>₱4,995.00</p>
     </div>
   </div>
   <div class="column">
     <div class="content">
       <img
-        src="https://cdn.shopify.com/s/files/1/0101/4864/2879/files/SSD_d1fabca4-75ef-45de-aabe-64e726e01806_540x.jpg?v=1644213499"
+        src="https://www.tmt.my/data/editor/product/HDS-GGBGPGSM2NE3GNTD/3.jpg"
         alt="Mountains" style="width:100%">
-      <h3>My Work</h3>
-      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam.
-        Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+      <h5>Kingston NV1 PCIe M.2 3.0 NVME 500GB, 250GB, 1TB, 2TB</h5>
+      <p>₱2,859.00</p>
     </div>
-
   </div>
-  <!-- END GRID -->
 </div>
 <script>
   let slideIndex = 1;
